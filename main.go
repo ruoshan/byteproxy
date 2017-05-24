@@ -20,10 +20,11 @@ var flagListen = flag.String("l", "", "listen port")
 var flagUpstream = flag.String("u", "", "upstream port")
 
 const directionUsage = `throttle direction: cs | sc | both | none
-	* cs: throttle client to server data path
-	* sc: throttle server to client data path
-	* both: throttle both direction (default)
-	* none: do not throttle`
+        * cs: throttle client to server data path
+        * sc: throttle server to client data path
+        * both: throttle both direction (default)
+        * none: do not throttle
+       `
 
 var flagDirection = flag.String("r", "both", directionUsage)
 
